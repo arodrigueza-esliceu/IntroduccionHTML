@@ -1,0 +1,128 @@
+:root{
+
+--main-color: rgb(37, 37, 248);
+--second-color: rgb(255, 167, 4);
+
+}
+
+html{
+
+box-sizing:border-box;
+font-size: 62.5%; /*1rem 10px*/
+
+
+}
+
+*,*::before,*:after{
+
+box-sizing: inherit;
+
+}
+
+body{
+
+font-family: sans-serif;
+font-size: 1.6rem;
+
+}
+
+
+h1,h2,h3{
+
+font-family: "Robot" ,sans-serif;
+
+
+}
+
+
+h1{
+
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+
+/*GENERICOS*/
+
+#galeria{
+
+padding: 0 1rem;
+
+}
+
+
+
+
+#galeria img{
+
+width: 100%;
+aspect-ratio: 1/1;
+object-fit: cover;
+border-radius: 5px;
+margin-bottom: 10px;
+display: block;
+margin: 1rem auto;
+max-width: 600px;
+
+}
+
+
+
+/*TABLET 2 COLUMNAS*/
+
+@media (min-width: 768px){
+
+    #galeria{
+
+        padding: 0 1rem;
+
+    }
+
+
+
+
+    #galeria img{
+
+        width: 47   %;
+        margin: 1rem 1%;
+        display: inline;
+        max-width: none;
+        
+    }
+
+
+}
+
+
+
+/*3 columnas*/
+
+@media (min-width: 1024px){
+
+    #galeria img{
+        width: 31%;
+        margin: 0.5rem 1%;
+        display: inline;
+        max-width: none;
+
+    }
+
+}
+
+
+/*TV PANTALLAS GRANDES*/
+
+@media (min-width 1440px){
+
+    #galeria img{
+
+        width: 22%;
+        margin: 1%;
+    }
+
+
+}
+
+
+
