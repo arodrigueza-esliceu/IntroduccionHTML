@@ -1,0 +1,3 @@
+proyecto-docker-php/docker-env/db/
+.env
+vendor/
