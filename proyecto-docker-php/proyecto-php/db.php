@@ -1,8 +1,8 @@
 <?php
 // Parámetros de conexión a la base de datos
 $serverName = "db";               // Nombre del servicio de base de datos en Docker
-$username   = "administrador";    // Usuario configurado en docker-compose
-$password   = "adinistrador123";  // Contraseña configurada en docker-compose
+$username   = "admin";    // Usuario configurado en docker-compose
+$password   = "admin123";  // Contraseña configurada en docker-compose
 $dbName     = "academia";         // Base de datos configurada en docker-compose
 
 // Crear la conexión con MySQL/MariaDB usando mysqli
@@ -12,6 +12,7 @@ $conn = new mysqli($serverName, $username, $password, $dbName);
 if ($conn->connect_error) {
     die("Error de conexión: " . $conn->connect_error);
 }
+
 
 // Si llegamos aquí, la conexión se ha establecido correctamente.
 // Más adelante usaremos $conn para trabajar con la base de datos.

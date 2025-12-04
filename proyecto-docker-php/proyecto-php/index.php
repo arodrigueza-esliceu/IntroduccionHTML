@@ -1,4 +1,5 @@
 <?php
+require __DIR__ . "/db.php";
 $pageTitle = "Inicio";
 require __DIR__ . "/includes/header.php";
 ?>
