@@ -1,4 +1,11 @@
 proyecto-docker-php/docker-env/db/
 .env
 vendor/
+
+# Ignorar toda la instalación WordPress generada por Docker (no versionar datos)
 wp_arodriguez.com/
+# O si quieres ser más selectivo (recomendado para no ignorar todo):
+# wp_arodriguez.com/db-data/               # datos de MariaDB/MySQL - permisos y cambios constantes
+# wp_arodriguez.com/wp-content/uploads/    # imágenes y archivos subidos - pesados y regenerables
+# wp_arodriguez.com/wp-content/cache/      # caché de plugins
+# wp_arodriguez.com/wp-config.php          # si tiene contraseñas reales (usa wp-config-sample.php)
