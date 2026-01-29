@@ -1,3 +1,4 @@
 proyecto-docker-php/docker-env/db/
 .env
 vendor/
+wp_arodriguez.com/
