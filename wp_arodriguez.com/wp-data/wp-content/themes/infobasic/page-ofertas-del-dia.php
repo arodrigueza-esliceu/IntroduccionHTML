@@ -3,7 +3,7 @@
 
 ?>
 
-ofertas del dia 
+<h1>Ofertas Del Dia</h1>
 
 <?php
     get_footer();

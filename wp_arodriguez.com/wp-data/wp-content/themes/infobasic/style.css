@@ -15,46 +15,50 @@ Text Domain: infobasic
 Tags: -sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
 
+:root{
 
-:root(
+--main-color: rgb(0, 210, 247);
+--background-body: aquamarine; 
+--secondary-color: #f4f4f4;
+--text-color: #ff00c8;
+--text-color-hover: #000000;
+--text-light-color: #777;
 
---main-color: #007bff; 
---background-body: #f5f5f5;
---text-color: #333; 
---text-color-active: #000;
---text-color-hover: #555;
---background-color-hover: #f9f9f9;
---text-light-color: #fff; 
+}
 
-)
 
 body{
 
-background-color: var(--background-body);
+background-color:var(--background-body)
+
 
 }
 
 .navbar{
 
-background-color: red;
+
+background-color: var(--main-color);
+
 
 }
 
-.navbar-light .navbar-nav .nav-link{{
 
-    color: var(--text-color);       
+
+.navbar-light .navbar-nav .nav-link{
+
+
+color:var(--text-color);
+
 
 }
 
 
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
-
-    color: var(--text-color-active);       
-    
+    color:var(--text-color-active);
 }
 
-.dropdown-item{
+.dropdown-menu{
+    background-color: var(--main-color);
 
-    background-color: var(--main-color);       
-    
-}
+
+
