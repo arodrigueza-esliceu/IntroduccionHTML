@@ -1,3 +1,10 @@
 proyecto-docker-php/docker-env/db/
 .env
 vendor/
+
+# Ignorar datos de DB y cosas generadas por Docker/WordPress
+wp_arodriguez.com/db-data/
+wp_arodriguez.com/wp-content/uploads/
+wp_arodriguez.com/wp-content/cache/
+wp_arodriguez.com/wp-content/upgrade/
+wp_arodriguez.com/.htaccess
